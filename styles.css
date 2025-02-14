@@ -199,10 +199,13 @@ button {
     background-color: #007bff;
     color: white;
     margin-bottom: 15px;
-    width: 100%;
+    width: 80%; /* Adjust the width as needed */
     padding: 10px;
     font-weight: bold;
     cursor: pointer;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .add-location:hover {
@@ -212,8 +215,16 @@ button {
 
 .autofill-btn {
     margin-top: 15px;
-    width: 100%;
+    width: 80%; /* Adjust the width as needed */
     padding: 10px;
     font-weight: bold;
     cursor: pointer;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.autofill-btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
 }
