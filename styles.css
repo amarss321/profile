@@ -1,0 +1,204 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f9f9f9;
+    margin: 0;
+    display: flex;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    background: #fff;
+    padding: 20px;
+    border-right: 1px solid #ddd;
+}
+
+.profile {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile i {
+    color: #2596be; /* Updated icon color */
+    background-color: #fff; /* Updated background color */
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.profile h2 {
+    margin: 10px 0 5px;
+    font-size: 18px;
+}
+
+.profile p {
+    color: gray;
+    font-size: 14px;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+}
+
+.menu li {
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.menu li span {
+    margin-right: 10px;
+    color: #2596be; /* Updated icon color */
+    background-color: #fff; /* Updated background color */
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.menu li:hover, .menu .active {
+    background: #f0f0f0;
+}
+
+.logout {
+    text-align: center;
+    margin-top: 20px;
+    color: red;
+    cursor: pointer;
+}
+
+/* Main Content */
+.main-content {
+    flex: 1;
+    padding: 20px;
+}
+
+h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+/* Orders, Locations, Wallet */
+.content-section {
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.hidden {
+    display: none;
+}
+
+.order-card {
+    background: #f8f8f8;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.order-price {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Box styling for sections */
+.box {
+    margin-bottom: 20px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Form group styling */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input, .form-group p {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.form-group p {
+    background-color: #f9f9f9;
+    margin: 0;
+}
+
+/* Email input container */
+.email-input-container {
+    display: flex;
+    align-items: center;
+}
+
+.email-input-container input {
+    flex: 1;
+}
+
+.email-input-container button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.email-input-container button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Button container */
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+/* Button styling */
+button {
+    display: inline-block;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.reset-password, .delete-account, .add-location, .autofill-btn {
+    background-color: #007bff;
+    color: white;
+}
+
+.reset-password:hover, .delete-account:hover, .add-location:hover, .autofill-btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.autofill-btn {
+    margin-top: 15px;
+    width: 100%;
+    padding: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
