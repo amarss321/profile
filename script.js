@@ -59,22 +59,18 @@ function saveLocation() {
     const fullName = document.getElementById('fullName').value;
     const mobileNumber = document.getElementById('mobileNumber').value;
     const pincode = document.getElementById('pincode').value;
-    const addressLine1 = document.getElementById('addressLine1').value;
-    const addressLine2 = document.getElementById('addressLine2').value;
-    const landmark = document.getElementById('landmark').value;
+    const addressDetails = document.getElementById('addressDetails').value;
     const townCity = document.getElementById('townCity').value;
     const state = document.getElementById('state').value;
     const defaultAddress = document.getElementById('defaultAddress').checked;
     const deliveryInstructions = document.getElementById('deliveryInstructions').value;
 
-    if (fullName && mobileNumber && pincode && addressLine1 && addressLine2 && townCity && state) {
+    if (fullName && mobileNumber && pincode && addressDetails && townCity && state) {
         alert(`Location saved:
         Full Name: ${fullName}
         Mobile Number: ${mobileNumber}
         Pincode: ${pincode}
-        Address Line 1: ${addressLine1}
-        Address Line 2: ${addressLine2}
-        Landmark: ${landmark}
+        Address Details: ${addressDetails}
         Town/City: ${townCity}
         State: ${state}
         Default Address: ${defaultAddress}
