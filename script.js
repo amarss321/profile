@@ -44,3 +44,8 @@ function autofillLocation() {
     locationList.appendChild(li);
     alert('Autofilled location successfully!');
 }
+
+function addLocation() {
+    alert("Add Location button clicked.");
+    // Add logic to handle adding a new location
+}
