@@ -79,16 +79,50 @@
             <span class="close" onclick="closeModal()">&times;</span>
             <h2>Add Location</h2>
             <div class="form-group">
-                <label for="town">Town</label>
-                <input type="text" id="town" placeholder="Enter town">
+                <label for="fullName">Full Name (First and Last name)</label>
+                <input type="text" id="fullName" placeholder="Enter full name">
             </div>
             <div class="form-group">
-                <label for="country">Country</label>
-                <input type="text" id="country" placeholder="Enter country">
+                <label for="mobileNumber">Mobile Number (For delivery contact)</label>
+                <input type="text" id="mobileNumber" placeholder="Enter mobile number">
             </div>
             <div class="form-group">
-                <label for="street">Street</label>
-                <input type="text" id="street" placeholder="Enter street">
+                <label for="pincode">Pincode (6-digit postal code)</label>
+                <input type="text" id="pincode" placeholder="Enter pincode">
+            </div>
+            <div class="form-group">
+                <label for="addressLine1">Flat, House No., Building, Company, Apartment</label>
+                <input type="text" id="addressLine1" placeholder="Enter specific location details">
+            </div>
+            <div class="form-group">
+                <label for="addressLine2">Area, Street, Sector, Village</label>
+                <input type="text" id="addressLine2" placeholder="Enter street-level details">
+            </div>
+            <div class="form-group">
+                <label for="landmark">Landmark (Nearby recognizable place)</label>
+                <input type="text" id="landmark" placeholder="Enter landmark">
+            </div>
+            <div class="form-group">
+                <label for="townCity">Town/City</label>
+                <input type="text" id="townCity" placeholder="Enter town/city">
+            </div>
+            <div class="form-group">
+                <label for="state">State</label>
+                <select id="state">
+                    <option value="">Select State</option>
+                    <option value="State1">State1</option>
+                    <option value="State2">State2</option>
+                    <!-- Add more states as needed -->
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="defaultAddress">
+                    <input type="checkbox" id="defaultAddress"> Set as Default Address
+                </label>
+            </div>
+            <div class="form-group">
+                <label for="deliveryInstructions">Delivery Instructions (Optional)</label>
+                <input type="text" id="deliveryInstructions" placeholder="Enter delivery instructions">
             </div>
             <button class="save-location" onclick="saveLocation()">Save</button>
         </div>
