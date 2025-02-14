@@ -199,7 +199,7 @@ button {
     background-color: #007bff;
     color: white;
     margin-bottom: 15px;
-    width: 80%; /* Adjust the width as needed */
+    width: 95%; /* Adjust the width as needed */
     padding: 10px;
     font-weight: bold;
     cursor: pointer;
@@ -209,13 +209,13 @@ button {
 }
 
 .add-location:hover {
-    background-color: #0056b3;
+    background-color: #007bff;
     transform: scale(1.05);
 }
 
 .autofill-btn {
     margin-top: 15px;
-    width: 80%; /* Adjust the width as needed */
+    width: 95%; /* Adjust the width as needed */
     padding: 10px;
     font-weight: bold;
     cursor: pointer;
@@ -225,6 +225,6 @@ button {
 }
 
 .autofill-btn:hover {
-    background-color: #0056b3;
+    background-color: #007bff;
     transform: scale(1.05);
 }
