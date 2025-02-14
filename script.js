@@ -46,6 +46,25 @@ function autofillLocation() {
 }
 
 function addLocation() {
-    alert("Add Location button clicked.");
-    // Add logic to handle adding a new location
+    document.getElementById('addLocationModal').classList.remove('hidden');
+    document.getElementById('addLocationModal').style.display = 'block';
+}
+
+function closeModal() {
+    document.getElementById('addLocationModal').classList.add('hidden');
+    document.getElementById('addLocationModal').style.display = 'none';
+}
+
+function saveLocation() {
+    const town = document.getElementById('town').value;
+    const country = document.getElementById('country').value;
+    const street = document.getElementById('street').value;
+
+    if (town && country && street) {
+        alert(`Location saved: ${town}, ${country}, ${street}`);
+        // Add logic to save the location
+        closeModal();
+    } else {
+        alert('Please fill in all fields.');
+    }
 }
