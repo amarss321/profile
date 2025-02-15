@@ -59,38 +59,8 @@ function showPosition(position) {
             document.getElementById('state').value = data.address.state;
             document.getElementById('pincode').value = data.address.postcode;
 
-            // Show the map modal
-            openMapModal();
-
-            // Initialize the map
-            if (!map) {
-                map = L.map('map').setView([lat, lon], 13);
-                L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-                    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-                }).addTo(map);
-                marker = L.marker([lat, lon], { draggable: true }).addTo(map)
-                    .bindPopup('Drag me to your location')
-                    .openPopup();
-            } else {
-                map.setView([lat, lon], 13);
-                marker.setLatLng([lat, lon]);
-            }
-
-            marker.on('dragend', function (e) {
-                const newLatLng = marker.getLatLng();
-                fetch(`https://nominatim.openstreetmap.org/reverse?format=json&lat=${newLatLng.lat}&lon=${newLatLng.lng}`)
-                    .then(response => response.json())
-                    .then(data => {
-                        document.getElementById('addressDetails').value = data.display_name;
-                        document.getElementById('townCity').value = data.address.city || data.address.town || data.address.village;
-                        document.getElementById('state').value = data.address.state;
-                        document.getElementById('pincode').value = data.address.postcode;
-                    })
-                    .catch(error => {
-                        console.error('Error fetching location data:', error);
-                        alert('Error fetching location data.');
-                    });
-            });
+            // Open the "Add Location" modal with filled-in details
+            addLocation();
         })
         .catch(error => {
             console.error('Error fetching location data:', error);
